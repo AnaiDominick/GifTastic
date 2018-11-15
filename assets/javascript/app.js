@@ -1,14 +1,13 @@
 $(document).ready(function() {
 
-// Initial array of bands
-var bands = ["Backstreet Boys", "Katy Perry", "Imagine Dragons", "One Republic", "Taylor Swift"];
+// Initial array of Artists
+var bands = ["Katy Perry", "Imagine Dragons", "Taylor Swift", "Bruno Mars", "Ariana Grande", "The Strokes", "Britney Spears", "Nirvana"];
 
-// displayBandInfo function re-renders the HTML to display the appropriate content
+// displayBandGifs function re-renders the HTML to display the appropriate content
 function displayBandGifs() {
 
     var band = $(this).attr("data-name");
     
-
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + band + "&api_key=SsrRbIxMmMqnTCVESExmA4EMXB1liW7H&limit=10";
     
 
@@ -19,10 +18,7 @@ function displayBandGifs() {
     }).then(function(response) {
      console.log(response);
 
-      // Creating a div to hold the band
-      var bandDiv = $("<div class='band'>");
-
-      // Storing the rating data
+      // Storing the  gif rating data
       var results = response.data;
 
       for (var i = 0; i < results.length; i++) {

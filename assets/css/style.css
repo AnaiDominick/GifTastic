@@ -13,3 +13,11 @@ body {
 #jumbotron {
     background-color: #6a5153;
 }
+
+#title {
+    font-size: 35px;
+}
+
+#favorites {
+    color: white;
+}
