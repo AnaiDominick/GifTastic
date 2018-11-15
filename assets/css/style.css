@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.png");
+}
+
+#title {
+    text-align: center;
+}
+
+#jumbotron {
+    background-color: #6a5153;
+}

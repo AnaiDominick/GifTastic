@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Artist Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+    
+        <div class="jumbotron jumbotron-fluid" id="jumbotron">
+    
+            <div class="container">
+    
+    
+                <h1 id="title"><i class="fas fa-search"></i>Artist Search</h1>
+    
+                <!-- Rendered Buttons will get Dumped Here  -->
+                <br>
+                <h2>Favorites:</h2> 
+                <div id="buttons-view"></div>
+
+                <br>
+                <form id="band-form" class="row">
+
+                    <div class="col-md-4">
+                    <label for="mband-input">Search an Artist:</label>
+                    <input type="text" id="band-input">
+                    </div>
+                    
+                    <!-- Button triggers new artist to be added -->
+                    <div class="col-md-2">
+                    <input id="add-band" type="submit" value="Add to Fav!">
+                    </div>
+                </form>
+
+                <br>
+                <!-- Artist Information -->
+                <div id="artist-div"></div>
+                <br>
+                <!-- Artist gifs will Get Dumped Here -->
+                <div id="bands-view"></div>
+                
+    
+            </div>
+    
+    
+        </div>
+    </div>
+    
+</body>
+</html>
